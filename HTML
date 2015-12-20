@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Website</title>
+	<meta charset="UTF-8" />
+	
+	<style type="text/css">
+  	* { font-family: Verdana, Arial, sans-serif; }
+  	body { background-color: #fff; cursor: default; }
+  	h1 { font-size: 15pt; }
+  	p { font-size: 10pt; }
+  	.leticianode { display: none}
+	</style>
+</head>
+
+<body>
+
+<div id="piece_1" class="leticianode">
+    <img src="http://s8.postimg.org/q4uj2d551/Outra_Pele_Papel.jpg" alt="" />
+</div>
+
+<div id="piece_2" class="leticianode">
+    <img src="http://s8.postimg.org/tpqell9ol/Coisas_QJa_Fiz_Em_NYC.jpg" alt="" />
+</div>
+
+<div id="piece_3" class="leticianode">
+    <img src="https://tintaempixel.files.wordpress.com/2014/12/img_0035.jpg" alt="" />
+</div>
+
+<div id="piece_4" class="leticianode">
+    <img src="http://s8.postimg.org/3jz5j1t8l/caminhosquadrinhos.jpg" alt="" />
+</div>
+
+<div id="piece_5" class="leticianode">
+    <img src="https://tintaempixel.files.wordpress.com/2014/12/img_0057.jpg" alt="" />
+</div>
+
+<div id="piece_6" class="leticianode">
+    <img src="http://s8.postimg.org/oyqj3kgud/Inverno.jpg" alt="" />
+</div>
+
+<div id="piece_7" class="leticianode">
+    <img src="https://tintaempixel.files.wordpress.com/2015/07/kraken.jpg" alt="" />
+</div>
+
+<div id="piece_8" class="leticianode">
+    <img src="http://s8.postimg.org/u3rql6ts5/Circulo.jpg" alt="" />
+</div>
+
+<div id="piece_9" class="leticianode">
+    <img src="https://tintaempixel.files.wordpress.com/2015/08/vasalisa.png" alt="" />
+</div>
+
+<div id="piece_10" class="leticianode">
+    <img src="http://s8.postimg.org/3mj15vww5/3_Deusas.jpg" alt="" />
+</div>
+
+<div id="piece_11" class="leticianode">
+    <img src="http://s8.postimg.org/k1hjw7491/Torre.jpg" alt="" />
+</div>
+
+<div id="piece_12" class="leticianode">
+    <img src="https://tintaempixel.files.wordpress.com/2015/08/ny2.png" alt="" />
+</div>
+
+<div id="piece_13" class="leticianode">
+    <img src="http://s8.postimg.org/hp0d74cw5/Get_Along_World.jpg" alt="" />
+</div>
+
+<div id="piece_14" class="leticianode">
+    <img src="https://tintaempixel.files.wordpress.com/2015/08/ny1.png" alt="" />
+</div>
+
+<div id="piece_15" class="leticianode">
+    <img src="http://s8.postimg.org/q3kl8y3b9/La_Vieja.jpg" alt="" />
+</div>
+
+<div id="piece_16" class="leticianode">
+    <img src="http://s8.postimg.org/4ha65nu4l/Teoria_Critica.jpg" alt="" />
+</div>
+
+<div id="piece_17" class="leticianode">
+    <img src="http://s8.postimg.org/t7zujh9hh/Sra_Do_Destino.jpg" alt="" />
+</div>
+
+<div id="piece_18" class="leticianode">
+    <img src="http://s8.postimg.org/3qcum52dh/Inicial.jpg" alt="" />
+</div>
+
+<div id="piece_19" class="leticianode">
+    <img src="https://tintaempixel.files.wordpress.com/2015/08/tonel.png" alt="" />
+</div>
+
+<div id="piece_20" class="leticianode">
+    <img src="http://s8.postimg.org/89p37nk91/Foi.jpg" alt="" />
+</div>
+
+$(document).ready(
+<script>
+var myids = [
+    "tintaempixel.wordpress.com/2014/11/21/seacret/",
+    "tintaempixel.files.wordpress.com/2014/12/img_0059.jpg",
+    "s8.postimg.org/t7zujh9hh/Sra_Do_Destino.jpg",
+    "tintaempixel.files.wordpress.com/2015/07/kraken.jpg?w=880",
+    "tintaempixel.files.wordpress.com/2015/08/vasalisa.png?w=880",
+    "s8.postimg.org/k1hjw7491/Torre.jpg",
+    "s8.postimg.org/oyqj3kgud/Inverno.jpg",
+    "tintaempixel.files.wordpress.com/2015/08/ny2.png?w=880",
+    "s8.postimg.org/hp0d74cw5/Get_Along_World.jpg",
+    "tintaempixel.files.wordpress.com/2015/08/ny1.png?w=880",
+    "s8.postimg.org/3mj15vww5/3_Deusas.jpg",
+    "s8.postimg.org/q3kl8y3b9/La_Vieja.jpg",
+    "s8.postimg.org/3jz5j1t8l/caminhosquadrinhos.jpg",
+    "tintaempixel.files.wordpress.com/2014/12/img_0035.jpg",
+    "s8.postimg.org/4ha65nu4l/Teoria_Critica.jpg",
+    "s8.postimg.org/tpqell9ol/Coisas_QJa_Fiz_Em_NYC.jpg",
+    "s8.postimg.org/3qcum52dh/Inicial.jpg",
+    "tintaempixel.files.wordpress.com/2015/08/tonel.png?w=880",
+    "s8.postimg.org/89p37nk91/Foi.jpg",
+    "s8.postimg.org/u3rql6ts5/Circulo.jpg"];
+
+currentvwd = null
+openInterno = function () {
+    // get a random number between 0 and the number of links
+    var randIdx = Math.random() * myids.length;
+    // round it, so it can be used as array index
+    randIdx = parseInt(randIdx, 10);
+    // construct the link to be opened
+    var nextvwd = myids[randIdx];
+    // open it in a new window / tab (depends on browser setting)
+    document.getElementById(currentvwd).style.display = "none";
+    document.getElementById(nextvwd).style.display = "block";
+    currentvwd = nextvwd
+};
+</script>
+)
+
+<button onclick="openInterno();">Interno</button>
+
+
+
+</body>
+</html>
